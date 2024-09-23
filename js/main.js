@@ -31,6 +31,25 @@ document.getElementById('noakhali-donation-button').addEventListener('click', fu
     const noakhaliNewBalance = noakhaliCurrentBalance + donationAmount;
     document.getElementById('noakhali-current-amount').innerText = noakhaliNewBalance;
 
+
+    // Added Transaction History.
+    const newEntry = document.createElement('div');
+
+    // Added Some Class.
+    newEntry.classList.add('w-full');
+    newEntry.classList.add('mt-[30px]');
+    newEntry.classList.add('p-[32px]');
+    newEntry.classList.add('border');
+    newEntry.classList.add('border-solid');
+    newEntry.classList.add('rounded-[16px]');
+    newEntry.classList.add('border-[#1111111A/10]');
+
+    //Added an innerHTML.
+    newEntry.innerHTML =
+        `<p class="font-bold">${donationAmount} Taka is Donated for famine-2024 at Feni, Bangladesh</p>
+        Date :  ${formatCurrentDate()} GMT +0600 (Bangladesh Standard Time)`
+    document.getElementById('transaction-container').appendChild(newEntry);
+
 })
 
 
@@ -56,6 +75,27 @@ document.getElementById('feni-donation-button').addEventListener('click', functi
 
     const feniNewBalance = feniCurrentBalance + donationAmount;
     document.getElementById('feni-current-amount').innerText = feniNewBalance;
+
+
+
+
+    // Added Transaction History.
+    const newEntry = document.createElement('div');
+
+    // Added Some Class.
+    newEntry.classList.add('w-full');
+    newEntry.classList.add('mt-[30px]');
+    newEntry.classList.add('p-[32px]');
+    newEntry.classList.add('border');
+    newEntry.classList.add('border-solid');
+    newEntry.classList.add('rounded-[16px]');
+    newEntry.classList.add('border-[#1111111A/10]');
+
+    //Added an innerHTML.
+    newEntry.innerHTML =
+        `<p class="font-bold">${donationAmount} Taka is Donated for Flood Relief in Feni, Bangladeshh</p>
+         Date :  ${formatCurrentDate()} GMT +0600 (Bangladesh Standard Time)`
+    document.getElementById('transaction-container').appendChild(newEntry);
 
 })
 
@@ -83,4 +123,37 @@ document.getElementById('quota-donation-button').addEventListener('click', funct
     const quotaNewBalance = quotaCurrentBalance + donationAmount;
     document.getElementById('quota-current-amount').innerText = quotaNewBalance;
 
+
+
+    // Added Transaction History.
+    const newEntry = document.createElement('div');
+
+    // Added Some Class.
+    newEntry.classList.add('w-full');
+    newEntry.classList.add('mt-[30px]');
+    newEntry.classList.add('p-[32px]');
+    newEntry.classList.add('border');
+    newEntry.classList.add('border-solid');
+    newEntry.classList.add('rounded-[16px]');
+    newEntry.classList.add('border-[#1111111A/10]');
+
+    //Added an innerHTML.
+    newEntry.innerHTML =
+        `<p class="font-bold">${donationAmount} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>
+         Date :  ${formatCurrentDate()} GMT +0600 (Bangladesh Standard Time)`
+    document.getElementById('transaction-container').appendChild(newEntry);
+
+})
+
+
+
+// Transaction Process.
+document.getElementById('history-button').addEventListener('click', function () {
+    document.getElementById('donation-part').classList.add('hidden');
+    document.getElementById('transaction-container').classList.remove('hidden');
+})
+
+document.getElementById('donation-button').addEventListener('click', function () {
+    document.getElementById('transaction-container').classList.add('hidden');
+    document.getElementById('donation-part').classList.remove('hidden');
 })
