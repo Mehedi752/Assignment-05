@@ -94,7 +94,7 @@
                     </div>
 
                     <div class="">
-                        <button id="noakhali-donation-button" class="w-full h-[60px] btn px-8 py-4 bg-[#B4F461] border-none rounded-[8px] 
+                        <button onclick="my_modal_1.showModal()" id="noakhali-donation-button" class="w-full h-[60px] btn px-8 py-4 bg-[#B4F461] border-none rounded-[8px] 
                         text-[#111111] text-xl font-semibold">Donate Now</button>
                     </div>
 
@@ -129,8 +129,9 @@
                     </div>
 
                     <div class="">
-                        <button id="feni-donation-button" class="w-full h-[60px] btn px-8 py-4 bg-[#B4F461] border-none rounded-[8px] 
+                        <button onclick="my_modal_1.showModal()" id="feni-donation-button" class="w-full h-[60px] btn px-8 py-4 bg-[#B4F461] border-none rounded-[8px] 
                         text-[#111111] text-xl font-semibold">Donate Now</button>
+
                     </div>
 
                 </div>
@@ -165,12 +166,29 @@
                     </div>
 
                     <div class="">
-                        <button id="quota-donation-button" class="w-full h-[60px] btn px-8 py-4 bg-[#B4F461] border-none rounded-[8px] 
+                        <button onclick="my_modal_1.showModal()" id="quota-donation-button" class="w-full h-[60px] btn px-8 py-4 bg-[#B4F461] border-none rounded-[8px] 
                         text-[#111111] text-xl font-semibold">Donate Now</button>
+
                     </div>
 
                 </div>
             </div>
+
+
+            <!-- Modal Card. -->
+            <dialog id="my_modal_1" class="modal">
+                <div class="modal-box flex flex-col justify-center items-center p-8">
+                    <h3 class="text-[32px] font-bold mb-5">Congrats!</h3>
+                    <img src="./assets/coin.png" alt="" class="">
+                    <p class="py-4">You have donated for humankind</p>
+                    <h3 class="text-[20px] font-bold">Successfully</h3>
+                    <div class="modal-action">
+                        <form method="dialog">
+                            <button class="btn bg-[#B4F461]">Close Information</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
 
         </div>
 
