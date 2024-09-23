@@ -9,9 +9,23 @@
     <!-- Add Tailwind CSS & Daisy UI CDN. -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Add Google Font. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        .lexend-font {
+            font-family: "Lexend", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+    </style>
+
 </head>
 
-<body>
+<body class="lexend-font">
 
     <header class="bg-[rgb(221,235,255)]">
         <nav class="container mx-auto flex justify-between py-[50px] px-5 lg:px-0">
@@ -61,7 +75,7 @@
                 <div class="flex flex-col justify-between gap-8 md:gap-0">
 
                     <!-- Coin Button. -->
-                    <button class="btn w-[120px]">
+                    <button class="btn w-[140px]">
                         <img src="./assets/coin.png" alt="" class="">
                         <p id="noakhali-current-amount" class="">0 BDT</p>
                     </button>
@@ -95,7 +109,7 @@
                 <div class="flex flex-col justify-between gap-8 md:gap-0">
 
                     <!-- Coin Button. -->
-                    <button class="btn w-[120px]">
+                    <button class="btn w-[140px]">
                         <img src="./assets/coin.png" alt="" class="">
                         <p id="feni-current-amount" class="text-[12px]">600 BDT</p>
                     </button>
@@ -131,7 +145,7 @@
                 <div class="flex flex-col justify-between gap-8 md:gap-0">
 
                     <!-- Coin Button. -->
-                    <button class="btn w-[120px]">
+                    <button class="btn w-[140px]">
                         <img src="./assets/coin.png" alt="" class="w-[24px] h-[24px]">
                         <p id="quota-current-amount" class="text-[12px]">2400 BDT</p>
                     </button>
