@@ -20,7 +20,7 @@ document.getElementById('noakhali-donation-button').addEventListener('click', fu
     const noakhaliCurrentBalance = getTextValueByID('noakhali-current-amount');
     console.log(donationAmount, myCurrentBalance, noakhaliCurrentBalance);
 
-    if (donationAmount > myCurrentBalance || isNaN(donationAmount)) {
+    if (donationAmount > myCurrentBalance || donationAmount < 0) {
         alert('Invalid amount. Please try again.');
         return;
     }
@@ -31,6 +31,8 @@ document.getElementById('noakhali-donation-button').addEventListener('click', fu
     const noakhaliNewBalance = noakhaliCurrentBalance + donationAmount;
     document.getElementById('noakhali-current-amount').innerText = noakhaliNewBalance;
 
+    // Call the modal.
+    document.getElementById('my_modal_1').showModal();
 
     // Added Transaction History.
     const newEntry = document.createElement('div');
@@ -65,7 +67,7 @@ document.getElementById('feni-donation-button').addEventListener('click', functi
     const feniCurrentBalance = getTextValueByID('feni-current-amount');
     console.log(donationAmount, myCurrentBalance, feniCurrentBalance);
 
-    if (donationAmount > myCurrentBalance || isNaN(donationAmount)) {
+    if (donationAmount > myCurrentBalance || donationAmount < 0) {
         alert('Invalid amount. Please try again.');
         return;
     }
@@ -76,7 +78,8 @@ document.getElementById('feni-donation-button').addEventListener('click', functi
     const feniNewBalance = feniCurrentBalance + donationAmount;
     document.getElementById('feni-current-amount').innerText = feniNewBalance;
 
-
+    // Call the modal.
+    document.getElementById('my_modal_1').showModal();
 
 
     // Added Transaction History.
@@ -112,7 +115,7 @@ document.getElementById('quota-donation-button').addEventListener('click', funct
     const quotaCurrentBalance = getTextValueByID('quota-current-amount');
     console.log(donationAmount, myCurrentBalance, quotaCurrentBalance);
 
-    if (donationAmount > myCurrentBalance || isNaN(donationAmount)) {
+    if (donationAmount > myCurrentBalance || donationAmount < 0) {
         alert('Invalid amount. Please try again.');
         return;
     }
@@ -123,7 +126,8 @@ document.getElementById('quota-donation-button').addEventListener('click', funct
     const quotaNewBalance = quotaCurrentBalance + donationAmount;
     document.getElementById('quota-current-amount').innerText = quotaNewBalance;
 
-
+    // Call the modal.
+    document.getElementById('my_modal_1').showModal();
 
     // Added Transaction History.
     const newEntry = document.createElement('div');

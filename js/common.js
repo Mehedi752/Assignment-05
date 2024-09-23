@@ -1,13 +1,28 @@
 
 // Common Reusable Functions.
+function isNumber(string) {
+
+    for (let ch of string) {
+        if (ch >= '0' && ch <= '9')
+            continue;
+        else
+            return false;
+    }
+    return true;
+}
+
 function getInputValueByID(id) {
     const inputValue = document.getElementById(id).value;
+    if (!isNumber(inputValue))
+        return -1;
     const inputNumber = parseFloat(inputValue);
     return inputNumber;
 }
 
 function getTextValueByID(id) {
     const textValue = document.getElementById(id).innerText;
+    if (!isNumber(textValue))
+        return -1;
     const textNumber = parseFloat(textValue);
     return textNumber;
 }

@@ -27,30 +27,30 @@
 
 <body class="lexend-font">
 
-    <header class="bg-[rgb(221,235,255)]">
-        <nav class="container mx-auto flex justify-between py-[50px] px-5 lg:px-0">
+    <header class="backdrop-blur-md sticky top-0 z-50">
 
-            <div class="">
-                <button id="blog-button"
-                    class="btn px-8 py-3 bg-[#B4F461] border-none rounded-[8px] text-[#111111] text-[18px] font-semibold">Blog</button>
-            </div>
+        <div class="bg-[rgb(221,235,255)]">
+            <nav class="container mx-auto flex justify-between py-[50px] px-5 lg:px-0">
 
-            <div class="hidden md:flex md:items-center md:gap-2">
-                <img src="./assets/logo.png" alt="" class="">
-                <h3 class="text-[#111111] text-xl font-semibold">Save Bangladesh</h3>
-            </div>
+                <div class="">
+                    <button id="blog-button"
+                        class="btn px-8 py-3 bg-[#B4F461] border-none rounded-[8px] text-[#111111] text-[18px] font-semibold">Blog</button>
+                </div>
 
-            <div class="flex items-center gap-2">
-                <img src="./assets/coin.png" alt="" class="">
-                <p id="my-current-balance" class="text-[#111111] text-xl font-medium ">5500</p>
-            </div>
+                <div class="hidden md:flex md:items-center md:gap-2">
+                    <img src="./assets/logo.png" alt="" class="">
+                    <h3 class="text-[#111111] text-xl font-semibold">Save Bangladesh</h3>
+                </div>
 
-        </nav>
-    </header>
+                <div class="flex items-center gap-2">
+                    <img src="./assets/coin.png" alt="" class="">
+                    <p id="my-current-balance" class="text-[#111111] text-xl font-medium ">5500</p>
+                </div>
 
-    <main class="container mx-auto mt-[100px] px-5 lg:px-0">
+            </nav>
+        </div>
 
-        <div class="flex gap-3 justify-center">
+        <div class="flex gap-3 justify-center mt-[50px]">
 
             <div class="">
                 <button id="donation-button"
@@ -63,6 +63,9 @@
             </div>
         </div>
 
+    </header>
+
+    <main class="container mx-auto mt-[50px] px-5 lg:px-0">
 
         <!-- Donation Part. -->
         <div id="donation-part" class="lg:px-[50px] pt-[50px] flex flex-col gap-10">
@@ -94,7 +97,7 @@
                     </div>
 
                     <div class="">
-                        <button onclick="my_modal_1.showModal()" id="noakhali-donation-button" class="w-full h-[60px] btn px-8 py-4 bg-[#B4F461] border-none rounded-[8px] 
+                        <button" id="noakhali-donation-button" class="w-full h-[60px] btn px-8 py-4 bg-[#B4F461] border-none rounded-[8px] 
                         text-[#111111] text-xl font-semibold">Donate Now</button>
                     </div>
 
@@ -129,7 +132,7 @@
                     </div>
 
                     <div class="">
-                        <button onclick="my_modal_1.showModal()" id="feni-donation-button" class="w-full h-[60px] btn px-8 py-4 bg-[#B4F461] border-none rounded-[8px] 
+                        <button id="feni-donation-button" class="w-full h-[60px] btn px-8 py-4 bg-[#B4F461] border-none rounded-[8px] 
                         text-[#111111] text-xl font-semibold">Donate Now</button>
 
                     </div>
@@ -166,7 +169,7 @@
                     </div>
 
                     <div class="">
-                        <button onclick="my_modal_1.showModal()" id="quota-donation-button" class="w-full h-[60px] btn px-8 py-4 bg-[#B4F461] border-none rounded-[8px] 
+                        <button id="quota-donation-button" class="w-full h-[60px] btn px-8 py-4 bg-[#B4F461] border-none rounded-[8px] 
                         text-[#111111] text-xl font-semibold">Donate Now</button>
 
                     </div>
